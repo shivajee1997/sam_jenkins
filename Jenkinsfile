@@ -15,7 +15,7 @@ pipeline {
       }
       steps {
         withAWS(credentials: 'Personla', region: 'us-east-1') {
-          sh '/usr/local/aws-sam-cli/current/dist/sam deploy --stack-name $STACK_NAME -t template.yaml --s3-bucket $S3_BUCKET --capabilities CAPABILITY_IAM'
+          sh '/usr/local/aws-sam-cli/current/dist/sam deploy --stack-name $STACK_NAME -t template.yaml --capabilities CAPABILITY_IAM'
         }
       }
     }
