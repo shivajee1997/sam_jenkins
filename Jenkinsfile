@@ -8,7 +8,7 @@ pipeline {
         sh '/usr/local/aws-sam-cli/current/dist/sam build'
       }
     }
-    stage('beta') {
+    stage('Deploy') {
       environment {
         STACK_NAME = 'sam-app-beta-stage'
         S3_BUCKET = 'sam-jenkins-demo-us-east-1-user1'
