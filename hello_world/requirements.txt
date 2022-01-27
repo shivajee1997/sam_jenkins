@@ -1,5 +1,4 @@
 requests
 openpyxl
 boto3
-json
 pathlib
