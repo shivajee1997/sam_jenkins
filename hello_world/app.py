@@ -10,7 +10,7 @@ new_sheet = "C:/Users/shiva/Downloads/server_consilidated_report_today.xlsx"
 
 out = 'E:/inventory.txt'
 
-#Commit added
+#Commit2 added
 def report_v2():
     Output = open(out,'a')
 
